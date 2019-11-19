@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0BB13D22384A75000F2EE78 /* TravisTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB13D12384A75000F2EE78 /* TravisTestTests.swift */; };
 		E0F60E50237F1C6900209A53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F60E4F237F1C6900209A53 /* AppDelegate.swift */; };
 		E0F60E52237F1C6900209A53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F60E51237F1C6900209A53 /* SceneDelegate.swift */; };
 		E0F60E54237F1C6900209A53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F60E53237F1C6900209A53 /* ViewController.swift */; };
@@ -15,7 +16,20 @@
 		E0F60E5C237F1C6E00209A53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F60E5A237F1C6E00209A53 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E0BB13D42384A75000F2EE78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0F60E44237F1C6900209A53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0F60E4B237F1C6900209A53;
+			remoteInfo = TravisTest;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		E0BB13CF2384A75000F2EE78 /* TravisTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravisTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0BB13D12384A75000F2EE78 /* TravisTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisTestTests.swift; sourceTree = "<group>"; };
+		E0BB13D32384A75000F2EE78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0F60E4C237F1C6900209A53 /* TravisTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravisTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F60E4F237F1C6900209A53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0F60E51237F1C6900209A53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +41,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E0BB13CC2384A75000F2EE78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E0F60E49237F1C6900209A53 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +58,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E0BB13D02384A75000F2EE78 /* TravisTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0BB13D12384A75000F2EE78 /* TravisTestTests.swift */,
+				E0BB13D32384A75000F2EE78 /* Info.plist */,
+			);
+			path = TravisTestTests;
+			sourceTree = "<group>";
+		};
 		E0F60E43237F1C6900209A53 = {
 			isa = PBXGroup;
 			children = (
 				E0F60E4E237F1C6900209A53 /* TravisTest */,
+				E0BB13D02384A75000F2EE78 /* TravisTestTests */,
 				E0F60E4D237F1C6900209A53 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				E0F60E4C237F1C6900209A53 /* TravisTest.app */,
+				E0BB13CF2384A75000F2EE78 /* TravisTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +102,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E0BB13CE2384A75000F2EE78 /* TravisTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0BB13D62384A75000F2EE78 /* Build configuration list for PBXNativeTarget "TravisTestTests" */;
+			buildPhases = (
+				E0BB13CB2384A75000F2EE78 /* Sources */,
+				E0BB13CC2384A75000F2EE78 /* Frameworks */,
+				E0BB13CD2384A75000F2EE78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0BB13D52384A75000F2EE78 /* PBXTargetDependency */,
+			);
+			name = TravisTestTests;
+			productName = TravisTestTests;
+			productReference = E0BB13CF2384A75000F2EE78 /* TravisTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E0F60E4B237F1C6900209A53 /* TravisTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0F60E60237F1C6E00209A53 /* Build configuration list for PBXNativeTarget "TravisTest" */;
@@ -97,6 +147,10 @@
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Octavio Cortes";
 				TargetAttributes = {
+					E0BB13CE2384A75000F2EE78 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = E0F60E4B237F1C6900209A53;
+					};
 					E0F60E4B237F1C6900209A53 = {
 						CreatedOnToolsVersion = 11.1;
 					};
@@ -116,11 +170,19 @@
 			projectRoot = "";
 			targets = (
 				E0F60E4B237F1C6900209A53 /* TravisTest */,
+				E0BB13CE2384A75000F2EE78 /* TravisTestTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E0BB13CD2384A75000F2EE78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E0F60E4A237F1C6900209A53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,6 +196,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E0BB13CB2384A75000F2EE78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0BB13D22384A75000F2EE78 /* TravisTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E0F60E48237F1C6900209A53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,6 +215,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0BB13D52384A75000F2EE78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0F60E4B237F1C6900209A53 /* TravisTest */;
+			targetProxy = E0BB13D42384A75000F2EE78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E0F60E55237F1C6900209A53 /* Main.storyboard */ = {
@@ -166,6 +244,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E0BB13D72384A75000F2EE78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Y5TRE54KA;
+				INFOPLIST_FILE = TravisTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.octaviocortes.TravisTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravisTest.app/TravisTest";
+			};
+			name = Debug;
+		};
+		E0BB13D82384A75000F2EE78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Y5TRE54KA;
+				INFOPLIST_FILE = TravisTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.octaviocortes.TravisTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravisTest.app/TravisTest";
+			};
+			name = Release;
+		};
 		E0F60E5E237F1C6E00209A53 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -321,6 +439,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E0BB13D62384A75000F2EE78 /* Build configuration list for PBXNativeTarget "TravisTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0BB13D72384A75000F2EE78 /* Debug */,
+				E0BB13D82384A75000F2EE78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E0F60E47237F1C6900209A53 /* Build configuration list for PBXProject "TravisTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
